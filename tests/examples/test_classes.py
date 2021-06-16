@@ -14,7 +14,7 @@ class TestPerson:
         ],
     )
     def test_init(self, first_name, last_name, age):
-        """Tests init for Person, and validates that:
+        """Tests __init__() for Person and validates that:
         - All of the init parameters match class attributes
         - The value of self.full_name is the concatenation of first_name
           and last_name with a space between
@@ -28,3 +28,14 @@ class TestPerson:
         assert person.age == age
         assert person.first_name == first_name
         assert person.last_name == last_name
+
+    def test_hello(self, alice):
+        """Tests the hello() method and validates that:
+        - It returns 'Hello, {Person.first_name}'
+        """
+        # setup
+        expected = "Hello, Alice"
+        # execution
+        greeting = alice.hello()
+        # validation
+        assert greeting == expected

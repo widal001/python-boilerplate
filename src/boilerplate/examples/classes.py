@@ -12,6 +12,10 @@ class Person:
         self.age = age
 
     @property
-    def full_name(self):
+    def full_name(self) -> str:
         """Returns the Person's full name"""
         return f"{self.first_name} {self.last_name}"
+
+    def hello(self) -> str:
+        """Returns 'Hello, {first_name}'"""
+        return f"Hello, {self.first_name}"
