@@ -52,5 +52,7 @@ unauthorized_licenses = []
 
 [tool.pylint."MESSAGE CONTROL"]
 disable = [
-  "C0114"  # Disables module docstrings
+  "C0114",  # Disables module docstrings
+  "R0201",  # Disables method could have been a function
+  "R0903"  # Disables too few public methods
 ]
