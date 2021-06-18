@@ -28,6 +28,7 @@ authorized_licenses = [
         "simplified bsd",
         "apache",
         "apache 2.0",
+        "apache license 2.0",
         "apache software license",
         "apache software",
         "gnu lgpl",
