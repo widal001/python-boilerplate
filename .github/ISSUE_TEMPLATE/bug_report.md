@@ -1,40 +1,50 @@
----
+______________________________________________________________________
+
 name: Bug report
 about: Create a report to help us improve
-title: 'BUG: [3-5 word summary]'
+title: 'BUG: \[3-5 word summary\]'
 labels: bug
 assignees: ''
 
----
+______________________________________________________________________
 
 ## Overview
+
 A clear and concise description of what the bug is.
 
 ### Steps To Reproduce
+
 Steps to reproduce the behavior:
+
 1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+1. Click on '....'
+1. Scroll down to '....'
+1. See error
 
 ### Expected behavior
+
 A clear and concise description of what you expected to happen.
 
-### Screenshots**
+### Screenshots\*\*
+
 If applicable, add screenshots to help explain your problem.
 
 ## Your Environment
 
 ### Computer
- - **Operating System:** [Windows | Mac | Linux]
- - **Version** [e.g. macOS Big Sur 11.2.3]
+
+- **Operating System:** \[Windows | Mac | Linux\]
+- **Version** \[e.g. macOS Big Sur 11.2.3\]
 
 ### Python Environment
-- **Python Version:** [e.g. 3.7.7]
+
+- **Python Version:** \[e.g. 3.7.7\]
 - **Package Versions:** Paste the output of `pip list` below
+
 ```
 copy and paste output here
 ```
 
 ## Additional Context
+
 Add any other context about the problem here.

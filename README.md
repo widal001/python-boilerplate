@@ -1,4 +1,5 @@
 # python-boilerplate
+
 Boilerplate code for a Python project with basic code quality checks set up and some examples of common Python features
 
 ## Getting Started
@@ -31,17 +32,17 @@ If you receive an error message, or the version of python you have installed is 
 When using this boilerplate code as a template for your own project, follow the steps below:
 
 1. All new python code should be added either as a single module or collection of modules under the existing `src/boilerplate/` package. For reference:
-    ```
-    setup.py
-    src/
-      boilerplate/
-        main.py
-        your_new_module_1.py
-        your_new_module_2/
-           your_new_module_2_1.py
-           your_new_module_2_2.py
-    tests/
-    ```
+   ```
+   setup.py
+   src/
+     boilerplate/
+       main.py
+       your_new_module_1.py
+       your_new_module_2/
+          your_new_module_2_1.py
+          your_new_module_2_2.py
+   tests/
+   ```
 1. If the new code requires a package that is not already listed in the `requirementst.txt` add that dependency to the following locations in this package:
    - Add the name of the package to the list of packages passed to `install_requires` in `setup.py` like so:
      ```
@@ -80,5 +81,6 @@ When using this boilerplate code as a template for your own project, follow the 
 
    ```
    > **NOTE**
+   >
    > - CI/CD checks will only pass if more than 90% of the code base is executed by the tests
    > - Pytest requires the following naming conventions for [test discovery](https://docs.pytest.org/en/reorganize-docs/new-docs/user/naming_conventions.html)
