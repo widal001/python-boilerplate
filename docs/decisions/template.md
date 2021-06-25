@@ -15,14 +15,14 @@
 
 - {driver 1, e.g., a force, facing concern, …}
 - {driver 2, e.g., a force, facing concern, …}
-- … <!-- numbers of drivers can vary -->
+- ... <!-- numbers of drivers can vary -->
 
 ## Considered Options
 
 - {option 1}
 - {option 2}
 - {option 3}
-- … <!-- numbers of options can vary -->
+- ... <!-- numbers of options can vary -->
 
 ## Decision Outcome
 
@@ -31,12 +31,12 @@ Chosen option: "{option 1}", because {justification. e.g., only option, which me
 ### Positive Consequences <!-- optional -->
 
 - {e.g., improvement of quality attribute satisfaction, follow-up decisions required, …}
-- …
+- ... <!-- numbers of options can vary -->
 
 ### Negative Consequences <!-- optional -->
 
 - {e.g., compromising quality attribute, follow-up decisions required, …}
-- …
+- ... <!-- numbers of options can vary -->
 
 ## Pros and Cons of the Options <!-- optional -->
 
@@ -44,28 +44,37 @@ Chosen option: "{option 1}", because {justification. e.g., only option, which me
 
 {example | description | pointer to more information | …} <!-- optional -->
 
-- Good, because {argument a}
-- Good, because {argument b}
-- Bad, because {argument c}
-- … <!-- numbers of pros and cons can vary -->
+- **Pro**
+  - Good, because {argument a}
+  - Good, because {argument b}
+  - ...
+- **Cons**
+  - Bad, because {argument c}
+  - ... <!-- numbers of pros and cons can vary -->
 
 ### {option 2}
 
 {example | description | pointer to more information | …} <!-- optional -->
 
-- Good, because {argument a}
-- Good, because {argument b}
-- Bad, because {argument c}
-- … <!-- numbers of pros and cons can vary -->
+- **Pro**
+  - Good, because {argument a}
+  - Good, because {argument b}
+  - ...
+- **Cons**
+  - Bad, because {argument c}
+  - ... <!-- numbers of pros and cons can vary -->
 
 ### {option 3}
 
 {example | description | pointer to more information | …} <!-- optional -->
 
-- Good, because {argument a}
-- Good, because {argument b}
-- Bad, because {argument c}
-- … <!-- numbers of pros and cons can vary -->
+- **Pro**
+  - Good, because {argument a}
+  - Good, because {argument b}
+  - ...
+- **Cons**
+  - Bad, because {argument c}
+  - ... <!-- numbers of pros and cons can vary -->
 
 ## Links <!-- optional -->
 
