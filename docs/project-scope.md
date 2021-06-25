@@ -1,5 +1,26 @@
 # {Project Title}
 
+<!-- TOC -->
+
+- [Overview](#overview)
+  - [Problem Statement](#problem-statement)
+  - [Objectives](#objectives)
+  - [Background](#background)
+- [User Stories](#user-stories)
+  - [{User Persona 1}](#user-persona-1)
+  - [{User Persona 2}](#user-persona-2)
+- [Feasibility Assessment](#feasibility-assessment)
+  - [Feasibility Criteria](#feasibility-criteria)
+  - [Practicality Criteria](#practicality-criteria)
+- [Deliverable Specifications](#deliverable-specifications)
+  - [{Deliverable or Phase 1}](#deliverable-or-phase-1)
+  - [{Deliverable or Phase 2}](#deliverable-or-phase-2)
+- [Team and Timeline](#team-and-timeline)
+  - [Roles and Responsibilities](#roles-and-responsibilities)
+  - [Project Roadmap](#project-roadmap)
+
+<!-- /TOC -->
+
 ## Overview
 
 ### Problem Statement <!-- REQUIRED -->
