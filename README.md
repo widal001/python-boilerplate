@@ -1,6 +1,42 @@
-# python-boilerplate
+# Python Boilerplate
 
-Boilerplate code for a Python project with basic code quality checks set up and some examples of common Python features
+<!-- TOC -->
+
+- [Python Boilerplate](#python-boilerplate)
+  - [About this Project](#about-this-project)
+    - [Made With](#made-with)
+    - [Relevant Documents](#relevant-documents)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+    - [This Template](#this-template)
+    - [Your Package](#your-package)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Acknowledgements](#acknowledgements)
+
+<!-- /TOC -->
+
+## About this Project
+
+<!-- TODO: Replace with a brief description of your own project -->
+
+Python Boilerplate provides a common file structure for a Python project and encourages best practices in python development, including some simple code quality checks set up and some idiomatic examples of python data strctures and functions. This project is a template that can be used as a foundation for future projects.
+
+### Made With
+
+<!-- TODO: Link only your most critical dependencies here -->
+
+- [{library name}](link_to_library): {5-10 word description of library}
+- ... <!-- number of libraries may vary -->
+
+### Relevant Documents
+
+- [Architecture Decision Records](docs/decisions): Directory of all of the architectural decisions made within the project.
+- [Project Scoping Document](docs/project-scope.md)
+- [Data Dictionary](docs/data-dictionary.md)
+- ... <!-- other relevant documents should be added to the docs/ directory and linked here -->
 
 ## Getting Started
 
@@ -29,13 +65,23 @@ If you receive an error message, or the version of python you have installed is 
 
 ## Usage
 
+### This Template
+
+<!-- TODO: Remove this section after following the steps below -->
+
 When using this boilerplate code as a template for your own project, follow the steps below:
 
-1. All new python code should be added either as a single module or collection of modules under the existing `src/boilerplate/` package. For reference:
+1. Replace update the
+1. Pick a new name for your package, then replace the word `boilerplate` with that new name in the following places:
+   - `setup.py`
+   - `tox.ini`
+   - `src/boilerplate/` and all files within that directory
+   - `tests/` and all of the files within that directory
+1. All new python code should be added either as a single module or collection of modules under the `src/{your_package_name}/` directory. For reference:
    ```
    setup.py
    src/
-     boilerplate/
+     your_package_name/
        main.py
        your_new_module_1.py
        your_new_module_2/
@@ -84,3 +130,30 @@ When using this boilerplate code as a template for your own project, follow the 
    >
    > - CI/CD checks will only pass if more than 90% of the code base is executed by the tests
    > - Pytest requires the following naming conventions for [test discovery](https://docs.pytest.org/en/reorganize-docs/new-docs/user/naming_conventions.html)
+
+### Your Package
+
+{1-2 sentence summary of intended usage}
+
+1. {Step 1 or first example use case}
+1. {Step 2 or second example use case}
+1. ... <!-- number of steps and use cases may vary -->
+
+## Contributing
+
+<!-- TODO: Update this section as well as CONTRIBUTING.md to reflect your contributing guidelines -->
+
+Contributions are always welcome! We encourage contributions in the form of discussion on issues in this repo and pull requests for improvements to documentation and code.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for ways to get started.
+
+## License
+
+<!-- TODO: Update this section as well as LICENSE to reflect the license of your project -->
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+## Acknowledgements
+
+- [Python Packaging Authority Sample Project](https://github.com/pypa/sampleproject)
+- [Best README Template](https://github.com/othneildrew/Best-README-Template)
