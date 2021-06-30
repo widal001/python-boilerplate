@@ -1,22 +1,26 @@
 # Python Boilerplate
 
+<details open="open">
+<summary>Table of Contents</summary>
+
 <!-- TOC -->
 
-- [Python Boilerplate](#python-boilerplate)
-  - [About this Project](#about-this-project)
-    - [Made With](#made-with)
-    - [Relevant Documents](#relevant-documents)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Usage](#usage)
-    - [This Template](#this-template)
-    - [Your Package](#your-package)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgements](#acknowledgements)
+- [About this Project](#about-this-project)
+  - [Made With](#made-with)
+  - [Relevant Documents](#relevant-documents)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [This Template](#this-template)
+  - [Your Package](#your-package)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 <!-- /TOC -->
+
+</details>
 
 ## About this Project
 
@@ -71,7 +75,7 @@ If you receive an error message, or the version of python you have installed is 
 
 When using this boilerplate code as a template for your own project, follow the steps below:
 
-1. Replace update the
+1. Complete all of the `TODO` items listed as comments in this README
 1. Pick a new name for your package, then replace the word `boilerplate` with that new name in the following places:
    - `setup.py`
    - `tox.ini`
