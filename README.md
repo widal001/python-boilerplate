@@ -30,10 +30,14 @@ Python Boilerplate provides a common file structure for a Python project and enc
 
 ### Made With
 
-<!-- TODO: Link only your most critical dependencies here -->
+<!-- TODO: Replace this list with your most critical dependencies -->
 
-- [{library name}](link_to_library): {5-10 word description of library}
-- ... <!-- number of libraries may vary -->
+- [tox](https://tox.readthedocs.io/en/latest/) - Automates and standardizes the creation of testing environments.
+- [pytest](https://docs.pytest.org/en/6.2.x/) - Simplifies the design and execution of both unit and integration testing.
+- [black](https://black.readthedocs.io/en/stable/) - Autoformats code for consistent styling.
+- [flake8](https://flake8.pycqa.org/en/latest/) - Checks that code complies with PEP8 style guidelines.
+- [pylint](https://www.pylint.org/) - Checks that code follows idiomatic best practices for Python.
+- [pre-commit](https://pre-commit.com/) - Runs code quality checks before code is committed.
 
 ### Relevant Documents
 
@@ -135,12 +139,12 @@ When using this boilerplate code as a template for your own project, follow the 
    > - CI/CD checks will only pass if more than 90% of the code base is executed by the tests
    > - Pytest requires the following naming conventions for [test discovery](https://docs.pytest.org/en/reorganize-docs/new-docs/user/naming_conventions.html)
 
-### Your Package
+### {Use Case 1}
 
-{1-2 sentence summary of intended usage}
+{1-2 sentence summary of this use case}
 
-1. {Step 1 or first example use case}
-1. {Step 2 or second example use case}
+1. {Step 1 to complete use case}
+1. {Step 2 to complete use case}
 1. ... <!-- number of steps and use cases may vary -->
 
 ## Contributing
