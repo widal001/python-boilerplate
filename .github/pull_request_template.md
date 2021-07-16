@@ -2,7 +2,7 @@
 
 Concise description of changes proposed in this pull request
 
-**Fixes** #
+Fixes #
 
 ## Changes Proposed
 
