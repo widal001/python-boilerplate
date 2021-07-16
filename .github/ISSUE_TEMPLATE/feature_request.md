@@ -1,4 +1,4 @@
-______________________________________________________________________
+---
 
 name: Feature request
 about: Suggest an idea for this project
@@ -6,7 +6,7 @@ title: 'FEATURE: \[3-5 word summary\]'
 labels: enhancement
 assignees: ''
 
-______________________________________________________________________
+---
 
 ## Feature Overview
 

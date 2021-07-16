@@ -1,4 +1,4 @@
-______________________________________________________________________
+---
 
 name: Task
 about: Outline changes that need to be made to the codebase
@@ -6,7 +6,7 @@ title: Task
 labels: enhancement
 assignees: ''
 
-______________________________________________________________________
+---
 
 ## Summary
 
