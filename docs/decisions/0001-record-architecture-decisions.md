@@ -1,4 +1,4 @@
-# {short title of solved problem and solution}
+# Recording Architecture Decisions
 
 - **Status:** {Draft | Proposed | Rejected | Accepted | Deprecated | … | Superseded By [xxx](yyyymmdd-xxx.md)} <!-- REQUIRED -->
 - **Last Modified:**: {YYYY-MM-DD when the decision was last updated} <!-- REQUIRED -->
