@@ -14,11 +14,11 @@ If you think you have found a bug in this tool, we'd love your help identifying 
 
 1. **Search the issue list:** Check to see if anyone has reported a similar issue. If so, comment on that issue with additional details or context.
 1. **Use the issue template** If no one else has reported it yet, please submit a new issue and select the `Bug Report` template. This is populated with the following sections:
-  - **Overview:** Succinctly describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior
-  - **Steps to Reproduce:** Describe the exact steps which reproduce the problem in as many details as possible. For example, start by explaining how you got to the page where you encountered the bug.
-  - **Expected Behavior:** Explain which behavior you expected to see instead, why, and how the behavior you saw failed to meet that expectation.
-  - **Screenshots:** Include screenshots and animated GIFs if possible, which show you following the described steps and clearly demonstrate the problem.
-  - **Your Environment:** List the technical details about your computer and/or development environment.
+    - **Overview:** Succinctly describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior
+    - **Steps to Reproduce:** Describe the exact steps which reproduce the problem in as many details as possible. For example, start by explaining how you got to the page where you encountered the bug.
+    - **Expected Behavior:** Explain which behavior you expected to see instead, why, and how the behavior you saw failed to meet that expectation.
+    - **Screenshots:** Include screenshots and animated GIFs if possible, which show you following the described steps and clearly demonstrate the problem.
+    - **Your Environment:** List the technical details about your computer and/or development environment.
 1. **Check the Bug Tracker:** Check the status of your bug by referencing the Bug Tracker project board on the project tab.
 
 ### Request new functionality
@@ -28,9 +28,9 @@ or have something addressed, we'd love to get your feedback. To request new func
 
 1. **Search the issue list:** Check the list of existing issues to see if anyone has requested a similar feature or functionality. If so, feel free to comment on that issue with more context or details.
 1. **Use the issue template** If no one else has requested something similar, please submit a new issue and select the `Feature Request` template. This is populated with the following sections:
-  - **Feature Overview:** Brief description of the feature you want added to this tool. Along with some details about how it should function and whether it's related to a specific problem you're encountering.
-  - **Alternatives Considered:** What other options might exist to achieve the same functionality with the existing tool. Why aren't those workarounds sufficient.
-  - **Additional Context:** Anything else we should know about this request?
+    - **Feature Overview:** Brief description of the feature you want added to this tool. Along with some details about how it should function and whether it's related to a specific problem you're encountering.
+    - **Alternatives Considered:** What other options might exist to achieve the same functionality with the existing tool. Why aren't those workarounds sufficient.
+    - **Additional Context:** Anything else we should know about this request?
 1. **Check the Feature Roadmap:** Check the status of your request by referencing the Feature Roadmap project board on the project tab.
 
 > **NOTE:** Not all feature requests will be implemented. The project maintainers will review each feature request and consider scoping it into the roadmap or explaining why the feature won't be implemented.
