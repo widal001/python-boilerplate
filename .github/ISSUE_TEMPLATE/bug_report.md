@@ -12,7 +12,7 @@ assignees: ''
 
 A clear and concise description of what the bug is.
 
-### Steps To Reproduce
+### Steps to Reproduce
 
 Steps to reproduce the behavior:
 
@@ -21,7 +21,7 @@ Steps to reproduce the behavior:
 1. Scroll down to '....'
 1. See error
 
-### Expected behavior
+### Expected Behavior
 
 A clear and concise description of what you expected to happen.
 

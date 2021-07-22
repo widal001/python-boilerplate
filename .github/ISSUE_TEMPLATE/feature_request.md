@@ -30,6 +30,6 @@ Briefly describe other features or solutions that were considered before making 
 - **{Alternative 1}:** {Description of why it wasn't viable}
 - **{Alternative 2}:** {Description of why it wasn't viable}
 
-### Additional Context
+## Additional Context
 
 Add any other context or screenshots about the feature request here.
