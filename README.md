@@ -13,9 +13,10 @@
   - [Installation](#installation)
 - [Usage](#usage)
   - [This Template](#this-template)
-  - [Your Package](#your-package)
+  - [{Use Case 1}](#use-case-1)
 - [Contributing](#contributing)
 - [License](#license)
+- [Maintainers](#maintainers)
 - [Acknowledgements](#acknowledgements)
 
 <!-- /TOC -->
@@ -41,7 +42,7 @@ Python Boilerplate provides a common file structure for a Python project and enc
 
 ### Relevant Documents
 
-- [Architecture Decision Records](docs/decisions): Directory of all of the architectural decisions made within the project.
+- [Architecture Decision Records](docs/adrs)
 - [Project Scoping Document](docs/project-scope.md)
 - [Data Dictionary](docs/data-dictionary.md)
 - ... <!-- other relevant documents should be added to the docs/ directory and linked here -->
@@ -160,6 +161,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for ways to get started.
 <!-- TODO: Update this section as well as LICENSE to reflect the license of your project -->
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+## Maintainers
+
+- @widal001
 
 ## Acknowledgements
 
