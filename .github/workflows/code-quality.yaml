@@ -8,18 +8,22 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        # checks all of the versions allowed in pyproject.toml
+        python-version: [3.7, 3.8, 3.9]
 
     steps:
+      # installs python
+      # one execution of the tests per version listed above
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
+      # installs poetry
+      - uses: Gr1N/setup-poetry@v4
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install tox
+          poetry install
       - name: Run tox
         run: |
-          tox
+          poetry run tox
