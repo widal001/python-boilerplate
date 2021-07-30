@@ -2,10 +2,9 @@
 
 - **Status:** {Draft | Proposed | Rejected | Accepted | Deprecated | … | Superseded By [xxx](yyyymmdd-xxx.md)} <!-- REQUIRED -->
 - **Last Modified:**: {YYYY-MM-DD when the decision was last updated} <!-- REQUIRED -->
+- **Related Issue:** #{issue number} <!-- REQUIRED -->
 - **Deciders:** {list everyone involved in the decision} <!-- OPTIONAL -->
 - **Tags:** {space and/or comma separated list of tags} <!-- OPTIONAL -->
-
-**Related Issue:** #{issue number} <!-- REQUIRED -->
 
 ## Context and Problem Statement
 

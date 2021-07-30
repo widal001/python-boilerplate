@@ -1,11 +1,10 @@
 # Recording Architecture Decisions
 
-- **Status:** {Draft | Proposed | Rejected | Accepted | Deprecated | … | Superseded By [xxx](yyyymmdd-xxx.md)} <!-- REQUIRED -->
-- **Last Modified:**: {YYYY-MM-DD when the decision was last updated} <!-- REQUIRED -->
-- **Deciders:** {list everyone involved in the decision} <!-- OPTIONAL -->
-- **Tags:** {space and/or comma separated list of tags} <!-- OPTIONAL -->
-
-**Related Issue:** #{issue number} <!-- REQUIRED -->
+- **Status:** Accepted
+- **Last Modified:**: 2021-07-30
+- **Related Issue:** #9
+- **Deciders:** @widal001
+- **Tags:** ADRs
 
 ## Context and Problem Statement
 
