@@ -9,6 +9,7 @@ cfgv==3.3.0; python_full_version >= "3.6.1"
 charset-normalizer==2.0.4; python_full_version >= "3.6.0" and python_version >= "3.5"
 click==8.0.1; python_version >= "3.6" and python_full_version >= "3.6.2"
 colorama==0.4.4; python_version >= "3.6" and python_version < "4.0" and sys_platform == "win32" and python_full_version >= "3.6.2" and platform_system == "Windows" and (python_version >= "3.6" and python_full_version < "3.0.0" and sys_platform == "win32" and (python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version >= "3.6") or sys_platform == "win32" and python_version >= "3.6" and (python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version >= "3.6") and python_full_version >= "3.5.0")
+configparser==5.0.2; python_version >= "3.6"
 coverage==5.5; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version < "4"
 distlib==0.3.2; python_full_version >= "3.6.1"
 dparse==0.5.1; python_version >= "3.5"
@@ -20,6 +21,7 @@ importlib-metadata==4.6.1; python_version < "3.8" and python_full_version >= "3.
 iniconfig==1.1.1; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version >= "3.6"
 isort==5.9.3; python_full_version >= "3.6.1" and python_version < "4.0" and python_version >= "3.6"
 lazy-object-proxy==1.6.0; python_version >= "3.6" and python_full_version < "3.0.0" and python_version < "4.0" or python_version >= "3.6" and python_version < "4.0" and python_full_version >= "3.6.0"
+liccheck==0.6.2; python_version >= "2.7"
 markdown-it-py==1.1.0; python_version >= "3.6" and python_version < "4.0" and python_full_version >= "3.6.1" and python_full_version < "4.0.0"
 mccabe==0.6.1; python_version >= "3.6" and python_full_version < "3.0.0" and python_version < "4.0" or python_version >= "3.6" and python_version < "4.0" and python_full_version >= "3.5.0"
 mdformat==0.7.7; python_full_version >= "3.6.1" and python_full_version < "4.0.0"
@@ -41,8 +43,9 @@ pyyaml==5.4.1; python_full_version >= "3.6.1" and python_version >= "3.5"
 regex==2021.7.6; python_full_version >= "3.6.2"
 requests==2.26.0; python_version >= "3.5" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" and python_version >= "3.5"
 safety==1.10.3; python_version >= "3.5"
+semantic-version==2.8.5; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.4.0" and python_version >= "2.7"
 six==1.16.0; python_full_version >= "3.6.1"
-toml==0.10.2; python_version >= "3.6" and python_version < "4.0" and python_full_version >= "3.6.1" and (python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0") and (python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.3.0" and python_version >= "3.6") and (python_version >= "3.5" and python_full_version < "3.0.0" or python_full_version >= "3.3.0" and python_version >= "3.5") and (python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version >= "3.6")
+toml==0.10.2; python_version >= "3.6" and python_version < "4.0" and python_full_version >= "3.6.1" and (python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0") and (python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.3.0" and python_version >= "3.6") and (python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.3.0" and python_version >= "2.7") and (python_version >= "3.5" and python_full_version < "3.0.0" or python_full_version >= "3.3.0" and python_version >= "3.5") and (python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version >= "3.6")
 tomli==1.2.0; python_version >= "3.6" and python_full_version >= "3.6.2"
 tox==3.24.0; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.5.0")
 typed-ast==1.4.3; python_version < "3.8" and python_full_version >= "3.6.2" and implementation_name == "cpython" and python_version >= "3.6"
