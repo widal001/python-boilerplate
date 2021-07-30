@@ -62,15 +62,27 @@ $ python --version
 > Python 3.9.0
 ```
 
-If you receive an error message, or the version of python you have installed is not between 3.7 and 3.9, consider using a tool like [pyenv](https://github.com/pyenv/pyenv) (on Mac/Linux) or [pyenv-win](https://github.com/pyenv-win/pyenv-win) to manage multiple python interpreters.
+If you receive an error message, or the version of python you have installed is not between 3.7 and 3.9, consider using a tool like [pyenv](https://github.com/pyenv/pyenv) (on Mac/Linux) or [pyenv-win](https://github.com/pyenv-win/pyenv-win) (on Windows) to manage multiple python installations.
 
 ### Installation
 
-1. Create a new virtual environment by running `python -m venv env` in the command line.
-1. Activate the virtual environment by running `source env/bin/activate` (on Mac/Linux) or `.\env\Scripts\activate` (on Windows).
+1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) on your local machine: `git clone https://github.com/widal001/python-boilerplate.git`
+1. Change directory into the cloned project: `cd python-boilerplate`
+1. Create a new virtual environment: `python -m venv env`
+1. Activate the virtual environment
+   - On Mac/Linux: `source env/bin/activate`
+   - On Windows: `.\env\Scripts\activate`
 1. Install this package in editable mode by running `pip install -e .` which makes changes made to scripts within this package available without re-installing it.
-1. Install the other dependencies required to contribute to the project by running `pip -r requirements.txt`
-1. Execute all tests by running `tox`
+1. Install the other dependencies required to contribute to the project: `pip -r requirements.txt`
+1. Execute all tests by running `tox` All tests should pass with an output that ends in something like this:
+   ```
+    py39: commands succeeded
+    lint: commands succeeded
+    checkdeps: commands succeeded
+    pytest: commands succeeded
+    coverage: commands succeeded
+    congratulations :)
+   ```
 
 ## Usage
 
