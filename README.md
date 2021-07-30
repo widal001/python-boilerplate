@@ -74,6 +74,7 @@ If you receive an error message, or the version of python you have installed is 
    - On Windows: `.\env\Scripts\activate`
 1. Install this package in editable mode by running `pip install -e .` which makes changes made to scripts within this package available without re-installing it.
 1. Install the other dependencies required to contribute to the project: `pip -r requirements.txt`
+1. Install `pre-commit` to autoformat your code: `pre-commit install`
 1. Execute all tests by running `tox` All tests should pass with an output that ends in something like this:
    ```
     py39: commands succeeded
