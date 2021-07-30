@@ -160,6 +160,26 @@ When using this boilerplate code as a template for your own project, follow the 
 1. {Step 2 to complete use case}
 1. ... <!-- number of steps and use cases may vary -->
 
+## Vision and Roadmap
+
+The vision for this template is to simplify the process of creating open source python projects with high quality codebase and mechanisms that promote smart and collaborative project governance. This project aims to fulfill this vision by:
+
+- Adopting a common python package file structure
+- Implementing basic linting and code quality checks
+- Reinforcing compliance with those code quality checks using CI/CD
+- Providing templates for things like documentation, issues, and pull requests
+- Offering pythonic implementation examples of common data structures and scripting tasks like:
+  - Creating classes, methods, and functions
+  - Setting up unit and integration testing
+  - Reading and writing to files
+
+For a more detailed breakdown of the feature roadmap and other development priorities please reference the following links:
+
+- [Feature Roadmap](https://github.com/widal001/python-boilerplate/projects/1)
+- [Architecture Decisions](https://github.com/widal001/python-boilerplate/projects/2)
+- [Bug Fixes](https://github.com/widal001/python-boilerplate/projects/3)
+- [All Issues](https://github.com/widal001/python-boilerplate/issues)
+
 ## Contributing
 
 <!-- TODO: Update this section as well as CONTRIBUTING.md to reflect your contributing guidelines -->
@@ -176,7 +196,7 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Maintainers
 
-- @widal001
+- [@widal001](https://github.com/widal001)
 
 ## Acknowledgements
 
