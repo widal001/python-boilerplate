@@ -14,6 +14,7 @@
 - [Usage](#usage)
   - [This Template](#this-template)
   - [{Use Case 1}](#use-case-1)
+- [Vision and Roadmap](#vision-and-roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 - [Maintainers](#maintainers)
@@ -33,6 +34,7 @@ Python Boilerplate provides a common file structure for a Python project and enc
 
 <!-- TODO: Replace this list with your most critical dependencies -->
 
+- [poetry](https://python-poetry.org/) - Dependency management library that makes creating and installing packages more streamlined.
 - [tox](https://tox.readthedocs.io/en/latest/) - Automates and standardizes the creation of testing environments.
 - [pytest](https://docs.pytest.org/en/6.2.x/) - Simplifies the design and execution of both unit and integration testing.
 - [black](https://black.readthedocs.io/en/stable/) - Autoformats code for consistent styling.
@@ -51,31 +53,40 @@ Python Boilerplate provides a common file structure for a Python project and enc
 
 ### Prerequisites
 
-- Python installed on your local machine, preferably a version between 3.7 and 3.9
+- Python installed on your local machine, a version between 3.7 and 3.9
+- Poetry installed on your local machine
 
-In order to check which version of python you have installed, run the following in your command line, and the output should look something like this:
+In order to check that you have both Python and Poetry installed, run the following in your command line, and the output should look something like this:
 
 > **NOTE**: in all of the code blocks below, lines preceded with $ indicate commands you should enter in your command line (excluding the $ itself), while lines preceded with > indicate the expected output from the previous command.
 
 ```
-$ python --version
+$ python --version && poetry --version
 > Python 3.9.0
+> Poetry version 1.1.6
 ```
 
-If you receive an error message, or the version of python you have installed is not between 3.7 and 3.9, consider using a tool like [pyenv](https://github.com/pyenv/pyenv) (on Mac/Linux) or [pyenv-win](https://github.com/pyenv-win/pyenv-win) (on Windows) to manage multiple python installations.
+**TROUBLESHOOTING:** If you receive an error message, or the version of python you have installed is not between 3.7 and 3.9, consider using a tool like [pyenv](https://github.com/pyenv/pyenv) (on Mac/Linux) or [pyenv-win](https://github.com/pyenv-win/pyenv-win) (on Windows) to manage multiple python installations.
+
+If you have python installed but not poetry, follow these installation instructions:
+
+- [Global install on Mac/Linux](https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructions)
+- [Global install on Windows](https://python-poetry.org/docs/#windows-powershell-install-instructions)
+- Local install inside a virtual environment using `pip` **NOTE:** This is not recommended because of potential package conflicts:
+  - Create a virtual environment: `python -m venv env`
+  - Acvitate the virtual environment. **NOTE:** This virtual environment must be active any time you are working with this project:
+    - Mac/Linux: `source env/bin/activate`
+    - Windows: `env\Scripts\activate`
+  - Install poetry: `pip install poetry`
 
 ### Installation
 
 1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) on your local machine: `git clone https://github.com/widal001/python-boilerplate.git`
 1. Change directory into the cloned project: `cd python-boilerplate`
-1. Create a new virtual environment: `python -m venv env`
-1. Activate the virtual environment
-   - On Mac/Linux: `source env/bin/activate`
-   - On Windows: `.\env\Scripts\activate`
-1. Install this package in editable mode by running `pip install -e .` which makes changes made to scripts within this package available without re-installing it.
-1. Install the other dependencies required to contribute to the project: `pip -r requirements.txt`
-1. Install `pre-commit` to autoformat your code: `pre-commit install`
-1. Execute all tests by running `tox` All tests should pass with an output that ends in something like this:
+1. Install the package: `poetry install`
+1. Install `pre-commit` to autoformat your code: `poetry run pre-commit install`
+1. Execute all tests: `poetry run tox`
+1. All tests should pass with an output that ends in something like this:
    ```
     py39: commands succeeded
     lint: commands succeeded
@@ -95,13 +106,13 @@ When using this boilerplate code as a template for your own project, follow the 
 
 1. Complete all of the `TODO` items listed as comments in this README
 1. Pick a new name for your package, then replace the word `boilerplate` with that new name in the following places:
-   - `setup.py`
+   - `pyproject.toml`
    - `tox.ini`
    - `src/boilerplate/` and all files within that directory
    - `tests/` and all of the files within that directory
 1. All new python code should be added either as a single module or collection of modules under the `src/{your_package_name}/` directory. For reference:
    ```
-   setup.py
+   pyproject.toml
    src/
      your_package_name/
        main.py
@@ -111,32 +122,8 @@ When using this boilerplate code as a template for your own project, follow the 
           your_new_module_2_2.py
    tests/
    ```
-1. If the new code requires a package that is not already listed in the `requirementst.txt` add that dependency to the following locations in this package:
-   - Add the name of the package to the list of packages passed to `install_requires` in `setup.py` like so:
-     ```
-     import os
-
-     from setuptools import find_packages
-     from setuptools import setup
-
-     # ...
-
-     setup(
-        # ...
-        install_requires=[
-            "pandas",  # needs to be a string
-        ],
-        include_package_data=True,
-        package_dir={'': 'src'},
-        packages=find_packages(where="src"),
-     )
-     ```
-   - Add the name and version to `requirements.txt` like so:
-     ```
-     # ...
-     pytest-cov==2.12.1
-     pandas==1.2.4
-     ```
+1. If the new code requires a package that is not already installed, add it to the project by using `poetry add <package_name>`
+1. If you make any manual changes to the `pyproject.toml` file make sure you run: `poetry lock && poetry install`
 1. Each new method or function you write needs to be accompanied by a test which calls that method or function.  These unit and/or integration tests should be added to the `tests/` directory using a file structure that mirrors the modules you are contributing to. For reference:
    ```
    tests/
@@ -152,6 +139,7 @@ When using this boilerplate code as a template for your own project, follow the 
    >
    > - CI/CD checks will only pass if more than 90% of the code base is executed by the tests
    > - Pytest requires the following naming conventions for [test discovery](https://docs.pytest.org/en/reorganize-docs/new-docs/user/naming_conventions.html)
+
 
 ### {Use Case 1}
 
