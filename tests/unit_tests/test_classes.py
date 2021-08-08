@@ -1,6 +1,6 @@
 import pytest
 
-from boilerplate.examples import Person
+from boilerplate.examples.classes import Person
 
 
 class TestPerson:
