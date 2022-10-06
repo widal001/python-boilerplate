@@ -12,7 +12,7 @@ colorama==0.4.4; python_version >= "3.6" and python_version < "4.0" and sys_plat
 configparser==5.0.2; python_version >= "3.6"
 coverage==5.5; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version < "4"
 distlib==0.3.2; python_full_version >= "3.6.1"
-dparse==0.5.1; python_version >= "3.5"
+dparse==0.5.2; python_version >= "3.5"
 filelock==3.0.12; python_full_version >= "3.6.1"
 flake8==3.9.2; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.5.0")
 identify==2.2.11; python_full_version >= "3.6.1"
