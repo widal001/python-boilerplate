@@ -1,34 +1,32 @@
 [tool.poetry]
+authors = ["widal001 <williamdaly422@gmail.com>"]
+description = "Boilerplate code for basic python package"
+license = "MIT License"
 name = "boilerplate"
 version = "0.1.0"
-description = "Boilerplate code for basic python package"
-authors = ["widal001 <williamdaly422@gmail.com>"]
-license = "MIT License"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = ">=3.9,<4.0"
 
-[tool.poetry.dev-dependencies]
-pre-commit = "^2.13.0"
-black = "^21.7b0"
-flake8 = "^3.9.2"
-pylint = "^2.9.6"
-tox = "^3.24.0"
-pytest = "^6.2.4"
-safety = "^1.10.3"
-pytest-cov = "^2.12.1"
-mdformat = "^0.7.7"
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+flake8 = "^6.1.0"
 liccheck = "^0.6.2"
+mdformat = "^0.7.7"
+pre-commit = "^2.13.0"
+pylint = "^2.17.5"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+safety = "^2.3.5"
+tox = "^3.28.0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
 
 # configures some basic black settings per this article:
 # https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/
 [tool.black]
-line-length = 79
-include = '\.pyi?$'
 exclude = '''
 /(
     \.git
@@ -44,34 +42,37 @@ exclude = '''
   | env
 )/
 '''
+include = '\.pyi?$'
+line-length = 79
 [tool.liccheck]
 # Authorized and unauthorized licenses in LOWER CASE
 authorized_licenses = [
-        "bsd",
-        "new bsd",
-        "bsd license",
-        "new bsd license",
-        "simplified bsd",
-        "apache",
-        "apache 2.0",
-        "apache license 2.0",
-        "apache software license",
-        "apache software",
-        "gnu lgpl",
-        "gnu lesser general public license v2 (lgplv2)",
-        "gnu general public license v2 (gplv2)",
-        "gnu library or lesser general public license (lgpl)",
-        "lgpl with exceptions or zpl",
-        "isc license",
-        "isc license (iscl)",
-        "mit",
-        "mit license",
-        "mozilla public license 2.0 (mpl 2.0)",
-        "public domain",
-        "python software foundation license",
-        "python software foundation",
-        "zpl 2.1",
-        "gpl v3"
+  "bsd",
+  "new bsd",
+  "bsd license",
+  "new bsd license",
+  "simplified bsd",
+  "apache",
+  "apache 2.0",
+  "apache license 2.0",
+  "apache software license",
+  "apache software",
+  "gnu lgpl",
+  "gnu lesser general public license v2 (lgplv2)",
+  "gnu general public license v2 (gplv2)",
+  "gnu library or lesser general public license (lgpl)",
+  "lgpl with exceptions or zpl",
+  "isc license",
+  "isc license (iscl)",
+  "mit",
+  "mit license",
+  "mozilla public license 2.0 (mpl 2.0)",
+  "public domain",
+  "python software foundation license",
+  "python software foundation",
+  "zpl 2.1",
+  "gpl v3",
+  "the unlicense (unlicense)",
 ]
 
 # list any specifically unauthorized licenses here
@@ -79,7 +80,7 @@ unauthorized_licenses = []
 
 [tool.pylint."MESSAGE CONTROL"]
 disable = [
-  "C0114",  # Disables module docstrings
-  "R0201",  # Disables method could have been a function
-  "R0903"  # Disables too few public methods
+  "C0114", # Disables module docstrings
+  "R0201", # Disables method could have been a function
+  "R0903", # Disables too few public methods
 ]

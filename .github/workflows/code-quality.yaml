@@ -4,12 +4,11 @@ on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       matrix:
         # checks all of the versions allowed in pyproject.toml
-        python-version: [3.7, 3.8, 3.9]
+        python-version: ["3.10", "3.11"]
 
     steps:
       # installs python
@@ -20,8 +19,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       # installs poetry
-      - uses: Gr1N/setup-poetry@v4
-      - name: Install dependencies
+      - uses: Gr1N/setup-poetry@v8
+      - name: Python Poetry Action
         run: |
           poetry install
       - name: Run tox
