@@ -9,7 +9,7 @@ version = "0.1.0"
 python = ">=3.9,<4.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.7.0"
+black = "^24.3.0"
 flake8 = "^6.1.0"
 liccheck = "^0.6.2"
 mdformat = "^0.7.7"
