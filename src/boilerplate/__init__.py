@@ -1,1 +1,1 @@
-__all__ = ["examples"]
+"""Main python package."""
