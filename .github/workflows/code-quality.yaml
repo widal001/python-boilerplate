@@ -1,28 +1,27 @@
-name: Python package
+name: Code quality checks
 
 on: [push, pull_request]
 
 jobs:
-  build:
+  lint-test:
+    name: API linting, formatting, and tests
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # checks all of the versions allowed in pyproject.toml
-        python-version: ["3.10", "3.11"]
-
     steps:
-      # installs python
-      # one execution of the tests per version listed above
-      - uses: actions/checkout@v2
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+      # set up python
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
-      # installs poetry
+          python-version: "3.11"
+          cache: "poetry"
+
+      # install poetry
       - uses: Gr1N/setup-poetry@v8
-      - name: Python Poetry Action
-        run: |
-          poetry install
-      - name: Run tox
-        run: |
-          poetry run tox
+
+      - name: Install analytics package using poetry
+        run: make install
+
+      - name: Run linting
+        run: make lint
+
+      - name: Run tests
+        run: make test-audit
