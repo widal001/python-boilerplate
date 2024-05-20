@@ -1,4 +1,4 @@
-# Python Boilerplate
+# Python Boilerplate <!-- omit in toc -->
 
 <details open="open">
 <summary>Table of Contents</summary>
@@ -35,11 +35,11 @@ Python Boilerplate provides a common file structure for a Python project and enc
 <!-- TODO: Replace this list with your most critical dependencies -->
 
 - [poetry](https://python-poetry.org/) - Dependency management library that makes creating and installing packages more streamlined.
-- [tox](https://tox.readthedocs.io/en/latest/) - Automates and standardizes the creation of testing environments.
-- [pytest](https://docs.pytest.org/en/6.2.x/) - Simplifies the design and execution of both unit and integration testing.
+- [pytest](https://docs.pytest.org/en/8.2.x/) - Simplifies the design and execution of both unit and integration testing.
 - [black](https://black.readthedocs.io/en/stable/) - Autoformats code for consistent styling.
-- [flake8](https://flake8.pycqa.org/en/latest/) - Checks that code complies with PEP8 style guidelines.
-- [pylint](https://www.pylint.org/) - Checks that code follows idiomatic best practices for Python.
+- [ruff](https://docs.astral.sh/ruff/) - Checks that code follows idiomatic best practices for Python.
+- [pylint](https://www.pylint.org/) - Applies a few additional checks that aren't covered by ruff.
+-
 - [pre-commit](https://pre-commit.com/) - Runs code quality checks before code is committed.
 
 ### Relevant Documents
@@ -72,29 +72,12 @@ If you have python installed but not poetry, follow these installation instructi
 
 - [Global install on Mac/Linux](https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructions)
 - [Global install on Windows](https://python-poetry.org/docs/#windows-powershell-install-instructions)
-- Local install inside a virtual environment using `pip` **NOTE:** This is not recommended because of potential package conflicts:
-  - Create a virtual environment: `python -m venv env`
-  - Acvitate the virtual environment. **NOTE:** This virtual environment must be active any time you are working with this project:
-    - Mac/Linux: `source env/bin/activate`
-    - Windows: `env\Scripts\activate`
-  - Install poetry: `pip install poetry`
 
 ### Installation
 
-1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) on your local machine: `git clone https://github.com/widal001/python-boilerplate.git`
-1. Change directory into the cloned project: `cd python-boilerplate`
-1. Install the package: `poetry install`
-1. Install `pre-commit` to autoformat your code: `poetry run pre-commit install`
-1. Execute all tests: `poetry run tox`
-1. All tests should pass with an output that ends in something like this:
-   ```
-    py39: commands succeeded
-    lint: commands succeeded
-    checkdeps: commands succeeded
-    pytest: commands succeeded
-    coverage: commands succeeded
-    congratulations :)
-   ```
+1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) on your local machine
+2. Change directory into the cloned project: `cd python-boilerplate`
+3. Run the setup command `make setup`
 
 ## Usage
 
@@ -107,10 +90,9 @@ When using this boilerplate code as a template for your own project, follow the 
 1. Complete all of the `TODO` items listed as comments in this README
 1. Pick a new name for your package, then replace the word `boilerplate` with that new name in the following places:
    - `pyproject.toml`
-   - `tox.ini`
    - `src/boilerplate/` and all files within that directory
    - `tests/` and all of the files within that directory
-1. All new python code should be added either as a single module or collection of modules under the `src/{your_package_name}/` directory. For reference:
+2. All new python code should be added either as a single module or collection of modules under the `src/{your_package_name}/` directory. For reference:
    ```
    pyproject.toml
    src/
@@ -122,9 +104,9 @@ When using this boilerplate code as a template for your own project, follow the 
           your_new_module_2_2.py
    tests/
    ```
-1. If the new code requires a package that is not already installed, add it to the project by using `poetry add <package_name>`
-1. If you make any manual changes to the `pyproject.toml` file make sure you run: `poetry lock && poetry install`
-1. Each new method or function you write needs to be accompanied by a test which calls that method or function.  These unit and/or integration tests should be added to the `tests/` directory using a file structure that mirrors the modules you are contributing to. For reference:
+3. If the new code requires a package that is not already installed, add it to the project by using `poetry add <package_name>`
+4. If you make any manual changes to the `pyproject.toml` file make sure you run: `poetry lock && poetry install`
+5. Each new method or function you write needs to be accompanied by a test which calls that method or function.  These unit and/or integration tests should be added to the `tests/` directory using a file structure that mirrors the modules you are contributing to. For reference:
    ```
    tests/
      conftest.py
@@ -161,13 +143,6 @@ The vision for this template is to simplify the process of creating open source 
   - Creating classes, methods, and functions
   - Setting up unit and integration testing
   - Reading and writing to files
-
-For a more detailed breakdown of the feature roadmap and other development priorities please reference the following links:
-
-- [Feature Roadmap](https://github.com/widal001/python-boilerplate/projects/1)
-- [Architecture Decisions](https://github.com/widal001/python-boilerplate/projects/2)
-- [Bug Fixes](https://github.com/widal001/python-boilerplate/projects/3)
-- [All Issues](https://github.com/widal001/python-boilerplate/issues)
 
 ## Contributing
 
