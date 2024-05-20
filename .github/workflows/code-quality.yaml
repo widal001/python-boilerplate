@@ -1,6 +1,11 @@
 name: Code quality checks
 
-on: [push, pull_request]
+on:
+  workflow_call:
+  pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   lint-test:
@@ -9,10 +14,9 @@ jobs:
     steps:
       # set up python
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "poetry"
 
       # install poetry
       - uses: Gr1N/setup-poetry@v8
