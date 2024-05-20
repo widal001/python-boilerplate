@@ -2,22 +2,16 @@
 
 name: Task
 about: Outline changes that need to be made to the codebase
-title: 'TASK:'
-labels: enhancement
+title: '[Task]:'
 assignees: ''
 
 ---
 
-## Summary
+### Summary
 
-Clear and concise summary of the work that needs to be completed
+{Summary of the work that needs to be completed}
 
-## To Do
 
-- [ ] {Description of change 1}
-- [ ] {Description of change 2}
+### Acceptance criteria
 
-## Definition of Done
-
-- [ ] {Description of expected behavior once changes are made}
 - [ ] {Description of expected behavior once changes are made}

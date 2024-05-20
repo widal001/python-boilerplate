@@ -6,19 +6,16 @@ name = "boilerplate"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = ">=3.9,<4.0"
+python = ">=3.11,<4.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.7.0"
-flake8 = "^6.1.0"
-liccheck = "^0.6.2"
-mdformat = "^0.7.7"
-pre-commit = "^2.13.0"
-pylint = "^2.17.5"
-pytest = "^7.4.0"
-pytest-cov = "^4.1.0"
-safety = "^2.3.5"
-tox = "^3.28.0"
+black = "^24.4.2"
+mypy = "^1.10.0"
+pre-commit = "^3.7.1"
+pylint = "^3.2.2"
+pytest = "^8.2.1"
+pytest-cov = "^5.0.0"
+ruff = "^0.4.4"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
@@ -44,43 +41,26 @@ exclude = '''
 '''
 include = '\.pyi?$'
 line-length = 79
-[tool.liccheck]
-# Authorized and unauthorized licenses in LOWER CASE
-authorized_licenses = [
-  "bsd",
-  "new bsd",
-  "bsd license",
-  "new bsd license",
-  "simplified bsd",
-  "apache",
-  "apache 2.0",
-  "apache license 2.0",
-  "apache software license",
-  "apache software",
-  "gnu lgpl",
-  "gnu lesser general public license v2 (lgplv2)",
-  "gnu general public license v2 (gplv2)",
-  "gnu library or lesser general public license (lgpl)",
-  "lgpl with exceptions or zpl",
-  "isc license",
-  "isc license (iscl)",
-  "mit",
-  "mit license",
-  "mozilla public license 2.0 (mpl 2.0)",
-  "public domain",
-  "python software foundation license",
-  "python software foundation",
-  "zpl 2.1",
-  "gpl v3",
-  "the unlicense (unlicense)",
-]
-
-# list any specifically unauthorized licenses here
-unauthorized_licenses = []
 
 [tool.pylint."MESSAGE CONTROL"]
 disable = [
-  "C0114", # Disables module docstrings
-  "R0201", # Disables method could have been a function
   "R0903", # Disables too few public methods
+  "R0801", # Disables duplicate code warning
 ]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+extend-safe-fixes = [
+  "D400", # docstrings should end with a period
+  "D415", # docstrings should end with a period, question mark, or exclamation point
+]
+ignore = [
+  "ANN101", # missing type annotation for self
+  "ANN102", # missing type annotation for cls
+  "D203", # no blank line before class
+  "D212", # multi-line summary first line
+  "FA", # flake8-future-annotations ruleset
+]
+select = ["ALL"]
