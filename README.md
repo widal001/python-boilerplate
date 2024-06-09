@@ -28,7 +28,7 @@
 
 <!-- TODO: Replace with a brief description of your own project -->
 
-Python Boilerplate provides a common file structure for a Python project and encourages best practices in python development, including some simple code quality checks set up and some idiomatic examples of python data strctures and functions. This project is a template that can be used as a foundation for future projects.
+Python Boilerplate provides a common file structure for a Python project and encourages best practices in python development, including some simple code quality checks set up and some idiomatic examples of python data structures and functions. This project is a template that can be used as a foundation for future projects.
 
 ### Made With
 
